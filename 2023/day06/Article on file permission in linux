@@ -1,0 +1,27 @@
+In Linux, file permission is an essential concept that determines who can access, read, write, or execute files and directories.
+These permissions help to ensure that only authorized users can access sensitive data and protect the system from unauthorized access. 
+Understanding file permission in Linux is crucial for anyone who wants to work with the operating system.
+
+Linux file permission is divided into three categories: owner, group, and others. The owner is the user who created the file,
+the group is a set of users who have common access rights, and others are all other users who are not the owner or in the group.
+
+Each file and directory in Linux has three types of permission: read (r), write (w), and execute (x). These permissions can
+be granted or denied for each category (owner, group, and others). For example, a file with the permission set to "rw-r--r--" 
+means that the owner has read and write permission, while the group and others have only read permission.
+
+To view the permission of a file or directory in Linux, you can use the "ls -l" command. The output of this command shows the 
+file or directory name, the owner of the file, the group associated with the file, the file size, the creation date, and the file permission.
+
+Changing file permission in Linux is also straightforward. You can use the "chmod" command to modify the file or directory permission. 
+The "chmod" command can be used in two ways: symbolic mode and numeric mode.
+
+In the symbolic mode, you can use letters to represent the user category (u for owner, g for group, and o for others) and the type of
+permission (r for read, w for write, and x for execute). For example, to give the owner of a file read and write permission, use the command "chmod u+rw filename."
+
+In the numeric mode, you can use numbers to represent the file permission. Each digit represents the permission for a user category 
+(owner, group, and others), and the value of the digit represents the sum of the permissions. For example, to give the owner read,
+write, and execute permission, use the command "chmod 700 filename."
+
+In conclusion, file permission in Linux is a crucial aspect of the operating system. It helps to ensure that only authorized users
+can access sensitive data and protect the system from unauthorized access. Understanding file permission and how to modify it is
+essential for anyone who wants to work with Linux.
