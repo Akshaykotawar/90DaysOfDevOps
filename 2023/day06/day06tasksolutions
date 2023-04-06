@@ -1,0 +1,10 @@
+ACL : ACLs allow us to apply a more specific set of permissions to a file or directory without (necessarily) changing the base ownership and permissions. 
+They let us "tack on" access for other users or groups.
+[root]# getfacl /test.txt
+
+# file: test.txt
+# owner: owner name
+# group: group name
+user::rwx : user permission
+group::rwx :group permission
+other::--- :other permission
