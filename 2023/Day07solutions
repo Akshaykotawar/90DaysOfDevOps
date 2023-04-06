@@ -1,0 +1,36 @@
+To install packages  :- apt-get install "Package Name"
+See list Of Packages :- dpkg --list
+To find out particular package :- dpkg --list grep "Package Name"
+To Update Package :-sudo apt-get update
+To get new packages:-sudo apt-get upgrade
+ Once you run the upgrade command you might see a message 
+ about automatically installed packages that are no longer required. 
+ And this also helps in freeing up some space on your disk :- sudo apt-get autoremove
+To Delete Package  :-apt-get purge PACKAGE_NAME
+
+check the status of docker :- systemctl status docker
+We use systemctl status command under systemd to view the status of the given service on Linux operating systems.
+status modes:Service status	Description
+active (running)	Service or daemon is running in the background.
+For example, sshd or nginx/apache web server and listing for incoming traffic.
+active (exited)	Service successfully started from the config file.
+Typically one time services configuration read before Service was exited.
+For example, AppArmor or Firewall service.
+active (waiting)	Our service is running but waiting for an event such
+as CPUS/printing event.
+inactive	Service is not running.
+enabled	Service is enabled at boot time.
+disabled	Service is disbled and will not be started at Linux server boot time.
+static	Service cannot be enabled on Linux, but mostly started by another
+systemd unit automatically. In other words, the unit file is not enabled
+and has no provisions for allowing in the [Install] unit file section.
+masked	Service is completely disabled and any start operation on it always fails.
+alias	Service name is an alias. It means service is symlink to another unit file.
+linked	Made available through one or more symlinks to the unit file
+(permanently in /etc/systemd/system/ or transiently in /run/systemd/system/), even
+though the unit file might reside outside of the unit file search path.
+
+
+service docker used stop & restart the package
+service docker stop'
+service docker restart
