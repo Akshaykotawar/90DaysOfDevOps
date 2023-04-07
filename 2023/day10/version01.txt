@@ -1,1 +1,3 @@
 "This is the big fix in development branch"
+"after bug fix fixing s is the new feature with minor alteration"
+
