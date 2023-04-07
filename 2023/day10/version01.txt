@@ -1,3 +1,4 @@
 "This is the big fix in development branch"
 "after bug fix fixing s is the new feature with minor alteration"
 "this is advance of previous feature "
+"feature 2 is completed and ready for release"
